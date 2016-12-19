@@ -23,12 +23,46 @@ app.initialize = {
     index: function () {
         vmMaster.vmPerfil.initialize();
     },
-    perfil: function () {},
-    areainteresse: function (){},
+    perfil: function () {
+        vmMaster.vmPerfil.initialize();
+    },
+    interesse: function (){
+        vmMaster.vmInteresse.initialize();
+    },
     curso: function () {},
-    historicoprofissional: function () {},
-    qualificacao: function () {},
-    contato: function () {}
+    experiencia: function () {},
+    formacao: function () {
+        //vmMaster..initialize();
+    },
+    competencia: function () {
+        vmMaster.vmCompetencia.initialize();
+    },
+    contato: function () {},
+    redirect: function (modelName) {
+        switch (modelName){
+            case "perfil":
+                this.perfil();
+                break;
+            case "interesse":
+                this.interesse();
+                break;
+            case "curso":
+                this.curso();
+                break;
+            case "formacao":
+                this.formacao();
+                break;
+            case "experiencia":
+                this.experiencia();
+                break;
+            case "competencia":
+                this.competencia();
+                break;
+            default :
+                this.perfil();
+                break;
+        }
+    }
 };
 
 

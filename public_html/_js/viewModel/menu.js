@@ -21,7 +21,7 @@ var viewModelMenu = function () {
     
     self.redirectLinkToPage = function(event) {
       console.log(event);  
-      
+      app.initialize.redirect(event);
     };
 };
 
