@@ -1,7 +1,7 @@
 var vmMaster = {
     vmMenu: new viewModelMenu(),
     vmMessage: new viewModelMessage(),
-    vmPerfil: new viewModelPerfil(),
+    vmResumo: new viewModelResumo(),
     vmInteresse: new viewModelInteresse(),
     vmCompetencia: new viewModelCompetencia(),
     vmFormacao: new viewModelFormacao(),

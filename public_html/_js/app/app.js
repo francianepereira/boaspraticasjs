@@ -21,10 +21,10 @@ app.initialize = {
         vmMaster.vmMenu.initialize();
     },
     index: function () {
-        vmMaster.vmPerfil.initialize();
+        vmMaster.vmResumo.initialize();
     },
-    perfil: function () {
-        vmMaster.vmPerfil.initialize();
+    resumo: function () {
+        vmMaster.vmResumo.initialize();
     },
     interesse: function (){
         vmMaster.vmInteresse.initialize();
@@ -46,8 +46,8 @@ app.initialize = {
     },
     redirect: function (modelName) {
         switch (modelName){
-            case "perfil":
-                this.perfil();
+            case "resumo":
+                this.resumo();
                 break;
             case "interesse":
                 this.interesse();
@@ -68,7 +68,7 @@ app.initialize = {
                 this.contato();
                 break;                
             default :
-                this.perfil();
+                this.resumo();
                 break;
         }
     }
