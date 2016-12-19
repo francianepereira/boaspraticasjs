@@ -1,7 +1,19 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var viewModelContato = function () {
+    var self = this;
+    self.intl = ko.observableArray([]);
+
+    self.initialize = function () {
+        self.loadPage();
+    };
+
+    self.loadPage = function () {
+        if (!document.getElementById("contentContato")) {
+            $("#content").load("_js/view/contato.html", function () {
+                var contentContato = document.getElementById("contentContato");
+                app.initialize.viewModel(self, contentContato);                
+            });
+        }
+    };
+};
 
 

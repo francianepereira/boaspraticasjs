@@ -29,10 +29,14 @@ app.initialize = {
     interesse: function (){
         vmMaster.vmInteresse.initialize();
     },
-    curso: function () {},
-    experiencia: function () {},
+    curso: function () {
+        vmMaster.vmCurso.initialize();
+    },
+    experiencia: function () {
+        vmMaster.vmExperiencia.initialize();
+    },
     formacao: function () {
-        //vmMaster..initialize();
+        vmMaster.vmFormacao.initialize();
     },
     competencia: function () {
         vmMaster.vmCompetencia.initialize();
@@ -46,7 +50,7 @@ app.initialize = {
             case "interesse":
                 this.interesse();
                 break;
-            case "curso":
+            case "cursos":
                 this.curso();
                 break;
             case "formacao":
