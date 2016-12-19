@@ -41,7 +41,9 @@ app.initialize = {
     competencia: function () {
         vmMaster.vmCompetencia.initialize();
     },
-    contato: function () {},
+    contato: function () {
+        vmMaster.vmContato.initialize();
+    },
     redirect: function (modelName) {
         switch (modelName){
             case "perfil":
@@ -62,6 +64,9 @@ app.initialize = {
             case "competencia":
                 this.competencia();
                 break;
+            case "contato":
+                this.contato();
+                break;                
             default :
                 this.perfil();
                 break;
