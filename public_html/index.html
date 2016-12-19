@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- Libs -->
+        <script src="_js/libs/jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="_js/libs/knockout/knockout-3.4.1.js" type="text/javascript"></script>
+        <script src="_js/libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>        
+        <script src="_js/libs/utils/utility.js" type="text/javascript"></script>
+
+        <!-- Model -->
+        <script src="_js/model/intl.js" type="text/javascript"></script>        
+        <script src="_js/model/message.js" type="text/javascript"></script>
+        <script src="_js/model/perfil.js" type="text/javascript"></script>
+        <script src="_js/model/menu.js" type="text/javascript"></script>
+
+        <!-- ViewModel -->
+        <script src="_js/viewModel/menu.js" type="text/javascript"></script>
+        <script src="_js/viewModel/message.js" type="text/javascript"></script>
+        <script src="_js/viewModel/perfil.js" type="text/javascript"></script>
+        <script src="_js/viewModel/master.js" type="text/javascript"></script>
+
+        <!-- App and Controller -->
+        <script src="_js/app/app.js" type="text/javascript"></script>   
+        <script src="_js/app/controller.js" type="text/javascript"></script>
+
+        <!-- Css -->
+        <link href="_css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="_js/libs/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="_js/libs/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>   
+        
+        <title data-bind="text: int()['app_title']"></title>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="app-body">
+            <header id="menu">
+
+            </header>
+            <section id="app" class="portrait">
+                <article>
+                    <div id="content" class="">
+
+                    </div>
+                </article>
+            </section>
+        </div>    
+        <div class="modal fade" id="message" role="dialog">
+
+        </div>
+        <div class="modal fade" id="component" role="dialog">
+
+        </div>
+        <div id="spinner" class="hidden">
+            <img id="imgSpinner" src="_img/ajax-loader.gif" alt=""/>
+        </div>        
+
     </body>
 </html>
+
