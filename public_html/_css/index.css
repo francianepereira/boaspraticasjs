@@ -7,4 +7,42 @@ and open the template in the editor.
     Created on : 18/12/2016, 14:47:46
     Author     : franciane.pereira
 */
+body{
+    font-size: 1vw !important;
+    margin: 0vw;
+    padding: 0vw;
+}
 
+header{
+    margin: 0vw 0vw 2vw 0vw;
+}
+div#contentMenu {
+    background-color: #000;
+}
+
+#contentMenu ul {
+    list-style-type: none;
+    position: relative;
+    display: inline-flex;
+    margin: 0vw;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+#contentMenu ul li {
+    margin: 0vw 2vw;
+    padding: 1vw;
+}
+
+#contentMenu ul li a {
+    font-size: 1vw;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgba(91, 192, 222, 0.7);
+}
+
+#contentMenu ul li a:hover {
+    color: rgba(91, 192, 222, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
