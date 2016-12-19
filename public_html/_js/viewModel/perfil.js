@@ -21,6 +21,12 @@ var viewModelPerfil = function () {
             $("#content").load("_js/view/perfil.html", function () {
                 var contentPerfil = document.getElementById("contentPerfil");
                 app.initialize.viewModel(self, contentPerfil);
+                self.fullname("Franciane de Sousa Pereira");
+                self.telephone("099 99999999");
+                self.city("Fortaleza");
+                self.state("Ceara");
+                self.cellphone("085 998175201");
+                self.email("franciane.hkd@gmail.com");
             });
         }        
     };
