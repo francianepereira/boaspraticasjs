@@ -28,11 +28,11 @@ var viewModelContato = function () {
             $("#content").load("_js/view/contato.html", function () {
                 var contentContato = document.getElementById("contentContato");
                 app.initialize.viewModel(self, contentContato);  
-                self.title_fullname("Name:");
-                self.title_telephone("Telephone:");
-                self.title_city("City:");
-                self.title_state("State:");
-                self.title_cellphone("Cellphone:");
+                self.title_fullname("Nome:");
+                self.title_telephone("Telefone:");
+                self.title_city("Cidade:");
+                self.title_state("Estado:");
+                self.title_cellphone("Celular:");
                 self.title_email("E-mail:");                
                 self.fullname("Franciane de Sousa Pereira");
                 self.telephone("085 3484-3325");

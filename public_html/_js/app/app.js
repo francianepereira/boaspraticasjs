@@ -55,13 +55,13 @@ app.initialize = {
             case "cursos":
                 this.curso();
                 break;
-            case "formacao":
+            case "formação":
                 this.formacao();
                 break;
-            case "experiencia":
+            case "experiência":
                 this.experiencia();
                 break;
-            case "competencia":
+            case "competência":
                 this.competencia();
                 break;
             case "contato":

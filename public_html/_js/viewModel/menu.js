@@ -13,7 +13,7 @@ var viewModelMenu = function () {
             $("#menu").load("_js/view/menu.html", function () {
                 var contentMenu = document.getElementById("contentMenu");
                 app.initialize.viewModel(self, contentMenu);
-                var arrayJsonItenList = ["resumo","interesse","formacao","experiencia", "cursos","competencia","contato"];
+                var arrayJsonItenList = ["resumo","interesse","formação","experiência", "cursos","competência","contato"];
                 self.itenList(arrayJsonItenList);
             });
         }
