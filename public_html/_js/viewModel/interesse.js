@@ -12,7 +12,7 @@ var viewModelInteresse = function () {
             $("#content").load("_js/view/interesse.html", function () {
                 var contentInteresse = document.getElementById("contentInteresse");
                 app.initialize.viewModel(self, contentInteresse);                
-                self.interesses(["Front-end", "Desenvolvimento Android", "Analise de sistema", "Mobile", "IOS", "Databases", ".NET", "Sql Server", "Frameworks JS", "Testes Unitarios", "GitHub", "Java", "Jenkins", "GitHub", "Python", "Mobile", "MVC", "PHP"]);
+                self.interesses([ "Desenvolvimento Android", "Análise de sistema", "Front-End", "Mobile", "Desenvolvimento IOS", "Databases", ".NET", "Sql Server", "Frameworks JS", "Testes Unitarios", "GitHub", "Java", "Jenkins", "GitHub", "Python", "Mobile", "MVC", "PHP", "Linux"]);
             });
         }
     };
