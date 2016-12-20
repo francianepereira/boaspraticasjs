@@ -11,6 +11,8 @@ body{
     font-size: 1vw !important;
     margin: 0vw;
     padding: 0vw;
+/*    background-image: url(../_img/back0.jpg) !important;
+    background-repeat: no-repeat;    */
 }
 
 header{
@@ -74,6 +76,7 @@ div#contentInteresse ul li, div#contentCompetencia ul li {
     float: left;
     padding: 2% 0vw;
     text-align: center;
+    border-radius: 3vw;
 }
 
 .item-background-yellow{
@@ -119,7 +122,7 @@ div#content h3{
     font-size: 3vw;
 }
 
-div#contentExperiencia ul.first, div#contentFormacao ul.first {
+div#contentExperiencia ul.first, div#contentFormacao ul.first, div#contentCurso ul.first {
     list-style-type: none;
     width: 100%;
     padding: 0vw 7vw;
@@ -129,8 +132,6 @@ div#contentExperiencia ul li, div#contentFormacao ul li{
     margin-bottom: 1vw;
 }
 
-div#contentCurso ul {
-    list-style-type: circle;
-    width: 80%;
-    padding: 0vw 7vw;
+div#contentCurso ul.first li.li-ul-first{
+    margin-bottom: 2vw;
 }

@@ -1,8 +1,16 @@
 <div id="contentCurso">
     <h3>Cursos</h3>
     <div class="body">
-        <ul data-bind="foreach: cursos">
-            <li data-bind="html:$data"></li>
+        <ul data-bind="foreach: cursos" class="first">
+            <li class="li-ul-first">
+                <h4 data-bind="html:$data.curso"></h4>
+                <div>
+                    <ul>
+                        <li><span data-bind="html:$data.instituicao"></span></li>
+                        <li><span data-bind="html:$data.periodo"></span></li>
+                    </ul>
+                </div>
+            </li>     
         </ul>
     </div>
 </div>
