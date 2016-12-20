@@ -1,11 +1,11 @@
 <div id="contentExperiencia">
-    <h3>Experiência</h3>
+    <h3>Experiências</h3>
     <div class="body">
-        <ul data-bind="foreach: experiencias">
+        <ul data-bind="foreach: experiencias" class="first">
             <li>
+                <h4 data-bind="html:$data.empresa"></h4>
                 <div>
-                    <ul>
-                        <li><h4 data-bind="html:$data.empresa"></h4></li>
+                    <ul>                        
                         <li><span data-bind="html:$data.cargo"></span></li>
                         <li><span data-bind="html:$data.periodo"></span></li>
                         <li><p data-bind="html:$data.descricao"></p></li>

@@ -16,6 +16,13 @@ body{
 header{
     margin: 0vw 0vw 2vw 0vw;
 }
+
+div.body{
+    margin-top: 4vw;
+    width: 100%;
+    text-align: justify;
+}
+
 div#contentMenu {
     background-color: #000;
 }
@@ -45,4 +52,85 @@ div#contentMenu {
     color: rgba(91, 192, 222, 1);
     text-decoration: none;
     cursor: pointer;
+}
+
+div#contentInteresse, div#contentCompetencia, div#contentContato, div#contentCurso, div#contentResumo, div#contentExperiencia, div#contentFormacao {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 4vw;
+}
+
+div#contentInteresse ul, div#contentCompetencia ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0vw 7vw;
+}
+
+div#contentInteresse ul li, div#contentCompetencia ul li {
+    margin: 1vw 1vw;
+    width: 10vw;
+    height: 5vw;
+    float: left;
+    padding: 2% 0vw;
+    text-align: center;
+}
+
+.item-background-yellow{
+    background-color: yellow;
+}
+
+.item-background-green{
+    background-color: green;
+}
+
+.item-background-red{
+    background-color: #d80505;
+}
+
+.item-background-blue{
+    background-color: #337ab7;
+}
+
+.item-background-orange{
+    background-color: orange; 
+}
+
+.item-background-gray{
+    background-color: gray;
+}
+
+.item-background-violet{
+    background-color: blueviolet;
+}
+
+.item-background-brown{
+    background-color: #795548;
+}
+
+.item-font{
+    color:white;
+    font-weight: bold;
+}
+
+div#content h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+div#contentExperiencia ul.first, div#contentFormacao ul.first {
+    list-style-type: none;
+    width: 100%;
+    padding: 0vw 7vw;
+}
+
+div#contentExperiencia ul li, div#contentFormacao ul li{
+    margin-bottom: 1vw;
+}
+
+div#contentCurso ul {
+    list-style-type: circle;
+    width: 80%;
+    padding: 0vw 7vw;
 }

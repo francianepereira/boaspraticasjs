@@ -49,7 +49,7 @@ app.initialize = {
             case "resumo":
                 this.resumo();
                 break;
-            case "interesse":
+            case "interesses":
                 this.interesse();
                 break;
             case "cursos":
@@ -58,10 +58,10 @@ app.initialize = {
             case "formação":
                 this.formacao();
                 break;
-            case "experiência":
+            case "experiências":
                 this.experiencia();
                 break;
-            case "competência":
+            case "competências":
                 this.competencia();
                 break;
             case "contato":

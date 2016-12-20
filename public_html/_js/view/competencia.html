@@ -2,7 +2,7 @@
     <h3>Competências</h3>
     <div class="body">
         <ul class="title" data-bind="foreach: competencias">
-            <li data-bind="html:$data"></li>     
+            <li data-bind="html:$data.name, attr:{'class':$data.class}"></li>     
         </ul>
     </div>    
 </div>

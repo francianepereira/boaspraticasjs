@@ -26,5 +26,9 @@ utils.utility = {
         });
         
         return json;
+    },
+    addClassToArray: function (value,className){
+        var object={"name":value,"class":className};        
+        return object;
     }
 };

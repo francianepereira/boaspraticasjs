@@ -1,11 +1,11 @@
 <div id="contentFormacao">
     <h3>Formação</h3>
     <div class="body">
-        <ul data-bind="foreach: formacoes">
+        <ul data-bind="foreach: formacoes" class="first">
             <li>
+                <h4 data-bind="html:$data.instituicao"></h4>
                 <div>
                     <ul>
-                        <li><h4 data-bind="html:$data.instituicao"></h4></li>
                         <li><span data-bind="html:$data.curso"></span></li>
                         <li><span data-bind="html:$data.periodo"></span></li>
                         <li><p data-bind="html:$data.descricao"></p></li>
